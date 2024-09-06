@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:93vh;
+    margin: 2vh;
+    background-color: #003366;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: #FFCC33;
+    color: #003366;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    margin-bottom:1px;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+}
+
+.logo img {
+    max-height: 6vh;
+    width: auto;
+}
+
+.site-name h1 {
+    /* margin: 0px; */
+    font-size: 27px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 100px auto;
+    flex-grow: 1; 
+    justify-content: flex-start;
+    margin-bottom: 35px;
+    /* width: fit-content; Adjusts the width to fit the content */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+label {
+    width: 200px; 
+    font-weight: bold;
+    color: #333;
+    text-align: right; 
+    margin-right: 10px;
+}
+
+input, select, textarea {
+    width: 250px; /* ใช้ความกว้างเต็มพื้นที่ที่ container อนุญาต */
+    max-width: 400px; /* กำหนดความกว้างสูงสุด */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0056b3; /* Highlight on focus */
+    outline: none;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* จัดให้ปุ่มชิดขวา */
+    width: 100%;
+}
+
+.btn {
+    background-color: #3476ae;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    /* width: auto;  */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* margin-top: 5px; */
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.btb {
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 5px;
+    justify-content: flex-end;
+}
+.btb:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffc107;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
